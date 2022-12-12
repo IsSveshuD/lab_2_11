@@ -13,7 +13,8 @@
 
 def fun1(type_='list'):
     def fun2(lst):
-        return eval(f'{type_}(lst. split())')
+        if fun1(type_='list'):
+            return eval(f'{type_}(lst. split())')
     print(type_)
     return fun2
 
