@@ -12,10 +12,14 @@
 # Результат работы замыкания выведите на экран.
 
 def fun1(type_='list'):
-    def fun2(lst):
-        if fun1(type_='list'):
-            return eval(f'{type_}(lst. split())')
     print(type_)
+
+    def fun2(lst):
+        if type_ == 'list':
+            return list(lst.split())
+        else:
+            return tuple(lst.split())
+
     return fun2
 
 
